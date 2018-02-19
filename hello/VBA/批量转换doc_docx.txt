@@ -1,0 +1,92 @@
+有时候需要把大量的docx文件另存为其它格式,比如pdf、doc、rtf、txt,或者将doc升级为docx， 用VBA可以批量处理。启动word，按下Alt+F11，打开Microsoft Visual Basic for Applications,点击 插入&amp;gt;模块，将下面的代码粘贴进去，然后按F5(某些笔记本电脑可能需要按Fn+F5)，或者点击图中的绿色小三角形，便可以执行代码。代码中涉及到的路径要根据自己的实际情况进行修改，有些子文件夹还需要手动创建。pdf文件除了能保持复杂的排版和数学公式不走样，还可以再借助Adobe Acrobat(不是Adobe Reader)另存为png、jpg等图片格式(pdf文件的每一页会成为一张单独的图片)。因为word本身不能直接另存为图片，所以需要借助pdf中转。下面的代码中用到了open函数，并且为名为Visible的参数赋值为msoFalse(msoFalse前面共有11个英文逗号)，目的是打开文件时不在word窗口中显示文件的内容，加快转换速度。Replace的作用是修改后缀名，SaveAs2的作用是“另存为”。
+'docx转pdf
+Option Explicit
+Sub docx2pdf()
+Dim sEveryFile As String
+Dim sSourcePath As String
+Dim sNewSavePath As String
+Dim CurDoc As Object
+sSourcePath = "E:DOCX文件"
+sEveryFile = Dir(sSourcePath &amp; "*.docx")
+Do While sEveryFile ""
+Set CurDoc = Documents.Open(sSourcePath &amp; sEveryFile, , , , , , , , , , , msoFalse)
+sNewSavePath = VBA.Strings.Replace(sSourcePath &amp; "PDF文件" &amp; sEveryFile, ".docx", ".pdf")
+CurDoc.SaveAs2 sNewSavePath, wdFormatPDF
+CurDoc.Close SaveChanges:=False
+sEveryFile = Dir
+Loop
+Set CurDoc = Nothing
+End Sub
+'docx转doc
+Option Explicit
+Sub docx2doc()
+Dim sEveryFile As String
+Dim sSourcePath As String
+Dim sNewSavePath As String
+Dim CurDoc As Object
+sSourcePath = "E:DOCX文件"
+sEveryFile = Dir(sSourcePath &amp; "*.docx")
+Do While sEveryFile ""
+Set CurDoc = Documents.Open(sSourcePath &amp; sEveryFile, , , , , , , , , , , msoFalse)
+sNewSavePath = VBA.Strings.Replace(sSourcePath &amp; "DOC文件" &amp; sEveryFile, ".docx", ".doc")
+CurDoc.SaveAs2 sNewSavePath, wdFormatDocument
+CurDoc.Close SaveChanges:=False
+sEveryFile = Dir
+Loop
+Set CurDoc = Nothing
+End Sub
+'docx转rtf
+Option Explicit
+Sub docx2rtf()
+Dim sEveryFile As String
+Dim sSourcePath As String
+Dim sNewSavePath As String
+Dim CurDoc As Object
+sSourcePath = "E:DOCX文件"
+sEveryFile = Dir(sSourcePath &amp; "*.docx")
+Do While sEveryFile ""
+Set CurDoc = Documents.Open(sSourcePath &amp; sEveryFile, , , , , , , , , , , msoFalse)
+sNewSavePath = VBA.Strings.Replace(sSourcePath &amp; "RTF文件" &amp; sEveryFile, ".docx", ".rtf")
+CurDoc.SaveAs2 sNewSavePath, wdFormatRTF
+CurDoc.Close SaveChanges:=False
+sEveryFile = Dir
+Loop
+Set CurDoc = Nothing
+End Sub
+'docx转txt
+Option Explicit
+Sub docx2txt()
+Dim sEveryFile As String
+Dim sSourcePath As String
+Dim sNewSavePath As String
+Dim CurDoc As Object
+sSourcePath = "E:DOCX文件"
+sEveryFile = Dir(sSourcePath &amp; "*.docx")
+Do While sEveryFile ""
+Set CurDoc = Documents.Open(sSourcePath &amp; sEveryFile, , , , , , , , , , , msoFalse)
+sNewSavePath = VBA.Strings.Replace(sSourcePath &amp; "TXT文件" &amp; sEveryFile, ".docx", ".txt")
+CurDoc.SaveAs2 sNewSavePath, wdFormatText
+CurDoc.Close SaveChanges:=False
+sEveryFile = Dir
+Loop
+Set CurDoc = Nothing
+End Sub
+'doc转docx
+Option Explicit
+Sub doc2docx()
+Dim sEveryFile As String
+Dim sSourcePath As String
+Dim sNewSavePath As String
+Dim CurDoc As Object
+sSourcePath = "E:\DOC文件\"
+sEveryFile = Dir(sSourcePath & "*.doc")
+Do While sEveryFile <> ""
+    Set CurDoc = Documents.Open(sSourcePath & sEveryFile, , , , , , , , , , , msoFalse)
+    sNewSavePath = VBA.Strings.Replace(sSourcePath & "DOCX文件\" & sEveryFile, ".doc", ".docx")
+    CurDoc.SaveAs2 sNewSavePath, wdFormatDocumentDefault
+    CurDoc.Close SaveChanges:=False
+    sEveryFile = Dir
+Loop
+Set CurDoc = Nothing
+End Sub
+以下内容为SaveAs2函数的介绍，不是代码

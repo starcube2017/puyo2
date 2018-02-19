@@ -1,0 +1,502 @@
+<!doctype html>
+        <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+        <!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+        <!--[if IE 8]>    <html class="lt-ie9" lang="en-US"> <![endif]-->
+        <!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+        <head>
+                <!-- META TAGS -->
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <link rel="shortcut icon" type="image/x-icon" href=""/> 
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="author" content="" />
+        <meta name="copyright" content=""/>
+
+                <title>噗哟噗哟</title>
+
+                <link rel="shortcut icon" href="../static/images/favicon.ico" />
+
+
+                
+
+                <!-- Style Sheet-->
+                <link rel='stylesheet' id='bootstrap-css-css'  href='../static/css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
+                <link rel='stylesheet' id='responsive-css-css'  href='../static/css/responsive5152.css?ver=1.0' type='text/css' media='all' />
+                <link rel='stylesheet' id='pretty-photo-css-css'  href='../static/js/prettyphoto/prettyPhotoaeb9.css?ver=3.1.4' type='text/css' media='all' />
+                <link rel='stylesheet' id='main-css-css'  href='../static/css/main5152.css?ver=1.0' type='text/css' media='all' />
+
+
+                <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+                <!--[if lt IE 9]>
+                <script src="js/html5.js"></script></script>
+                <![endif]-->
+
+        </head>
+
+        <body>
+                <!-- Start of Header -->
+                <div class="header-wrapper">
+                        <header>
+                                <div class="container">
+
+
+                                        <div class="logo-container">
+                                                <!-- Website Logo -->
+                                                <a href="index-2.html"  title="Knowledge Base Theme">
+                                                        <img src="../static/images/logo.png" alt="噗哟噗哟.的做做作业.考考试">
+                                                </a>
+                                                <span class="tag-line">——噗哟噗哟.的做做作业.考考试</span>
+                                        </div>
+
+
+                                        <!-- Start of Main Navigation -->
+                                        <nav class="main-nav">
+                                                <div class="menu-top-menu-container">
+                                                        <ul id="menu-top-menu" class="clearfix">
+                                                                <li><a href="/quickexam">主页</a></li>
+                                                                <li><a href="/quickexam/log">更新日志</a></li>
+                                                        </ul>
+                                                </div>
+                                        </nav>
+                                        <!-- End of Main Navigation -->
+
+                                </div>
+                        </header>
+                </div>
+                <!-- End of Header -->
+                <section class="wider" id="upload_word_area" style="position:absolute;opacity: 1; top: 0%;cursor:pointer;z-index:999">
+                    <div style='background:url(../static/images/bnr_header.png) no-repeat;width:350px;height:350px;cursor:pointer' alt="word文件上传">
+                        <input style="width:100%;height:100%;opacity:0" accept=".doc" data-num="1" type="file" name="upFile" id="upFile"/> 
+
+                    </div>
+                </section>
+                <!-- Start of Search Wrapper -->
+                <div class="search-area-wrapper">
+                        <div class="search-area container">
+                                <h3 class="search-header">你有许多题目？需要一下子解决？</h3>
+                                <p class="search-tag-line">(例:生存还是死亡？ 一只知更鸟是怎么死的？——每题间可用   、 ： ； ，隔开)</p>
+
+                                <form id="search-form" class="search-form clearfix" >
+                                      
+                                      <span class="dropdown open" style="cursor:pointer">
+                                        <a data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true"><img src="../static/images/btn_power.png"></a>
+                                        <ul class="dropdown-menu" style="display:none">
+                                          <li><a title="普通搜索">x1</a></li>
+                                          <li><a  title="5倍强度搜索">x5</a></li>
+                                          <li><a  title="10倍强度搜索">x10</a></li>
+                                          <li><a  title="20倍强度搜索">x20</a></li>
+                                          <li><a  title="50倍强度搜索">x50</a></li>
+                                          <li><a  title="100倍强度搜索">x100</a></li>
+                                        </ul>
+                                      </span>
+                                      <span id="power_rate">x1</span>
+                                      <input class="search-term required" type="text" id="s" name="s" placeholder="例: 问题1 问题2 问题3 ...(请不要用回车)" title="* 请输入问题，不要用回车!" />
+                                      <input class="search-btn" type="button" value="开搜" />
+                                      <div id="search-error-container"></div>
+                                </form>
+
+                        </div>
+                </div>
+                <!-- End of Search Wrapper -->
+
+                <!-- Start of Page Container -->
+                <div class="page-container">
+                        <div class="container">
+                                <div class="row">
+
+                                        <!-- start of page content -->
+                                        <div class="span8 page-content" id="web_content_area">
+                                            <article class="format-standard type-post hentry clearfix">
+
+                                                        <header class="clearfix">
+
+                                                                <h3 class="post-title">
+                                                                        <a href="#">使用方法:</a>
+                                                                </h3>
+
+                                                                <div class="post-meta clearfix">
+                                                                        <span class="date">14 Feb, 2018</span>
+                                                                        <span class="category"><a href="#" title="View all posts in Server &amp; Database">word文件 &amp; 上传方法</a></span>
+                                                                        <span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">4 步骤</a></span>
+                                                                        <span class="like-count">666</span>
+                                                                </div><!-- end of post meta -->
+
+                                                        </header>
+                                                        <ul class="articles">
+                                                            <li class="article-entry image">
+                                                                <span style="background:url('../static/images/home_brunch_software.png');display:inline-block;width:315px;height:386px"></span>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <span style="display:inline-block;width:315px;height:386px">
+                                                                
+                                                                    <h2>STEP.1<h2>
+                                                                    <h3>
+                                                                    一般情况下，可以将您的问题用各种符号链接起来。放入搜索框，可以迅速得到答案。
+                                                                    本站的特点就是同时查询多条问题。
+                                                                    另一种方法：
+                                                                    如果您的考卷或问题是txt或doc格式请先转换成docx格式。</h3>
+                                                                    <br>
+                                                                </span>
+                                                                
+                                                            </li>
+                                                            <li class="article-entry image">
+                                                                <span style="background:url('../static/images/home_brunch_graphic.png');display:inline-block;width:315px;height:386px"></span>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <span style="display:inline-block;width:315px;height:386px">
+                                                                
+                                                                    <h2>STEP.2<h2>
+                                                                    <h3>
+                                                                    使用任意版本的office 打开您的doc文件，将其另存为word.docx文件。
+                                                                    注意：文件中，每一小题的序号不可前后符号太混乱。正确的例子:
+                                                                    1.问题 || 2、问题 || _问题</h3>
+                                                                    <br>
+                                                                </span>
+                                                                
+                                                            </li>
+                                                            <li class="article-entry image">
+                                                                <span style="background:url('../static/images/home_brunch_illust.png');display:inline-block;width:315px;height:386px"></span>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <span style="display:inline-block;width:315px;height:386px">
+                                                                
+                                                                    <h2>STEP.3<h2>
+                                                                    <h3>
+                                                                    点击本站，左上侧漂浮的大五角星。
+                                                                    把转换后的docx文件上传:
+                                                                    耐心等待网站解析回答问题期间，不要按其他任何内容</h3>
+                                                                    <br><br><br><br>
+                                                                </span>
+                                                                
+                                                            </li>
+                                                            <li class="article-entry image">
+                                                                <span style="background:url('../static/images/home_brunch_education.png');display:inline-block;width:315px;height:386px"></span>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <span style="display:inline-block;width:315px;height:386px">
+                                                                
+                                                                    <h2>其他用法:<h2>
+                                                                    <h3>
+                                                                    将你身边的考卷或者作业，用手机，拍照后。&nbsp;&nbsp;&nbsp;&nbsp;提交到一个ORC网站(可在百度搜索)。
+                                                                    这种网站支持照片转成文字档，转成word文档:
+                                                                    例如：<a href="http://ocr.wdku.net/" target="_blank">点我，我是一个ORC网站</a></h3>
+                                                                    <br>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                </article>
+
+                                        </div>
+                                        <!-- end of page content -->
+
+
+                                        <!-- start of sidebar -->
+                                        <aside class="span4 page-sidebar">
+
+
+
+                                                <section class="widget">
+                                                        <h3 class="title">更新情况</h3>
+                                                        <ul class="articles">
+                                                                <li class="article-entry standard">
+                                                                        <h4><a href="#">修改了核心代码 支持更多种搜索</a></h4>
+                                                                        <span class="article-meta">1 Feb, 2018 in <a href="#" title="View all posts in Server &amp; Database">puyopuyo &amp; 系统</a></span>
+                                                                        <span class="like-count">23</span>
+                                                                </li>
+                                                                <li class="article-entry standard">
+                                                                        <h4><a href="#">增加使用百度知道搜索模块</a></h4>
+                                                                        <span class="article-meta">15 Feb, 2018 in <a href="#" title="View all posts in Website Dev">本站 升级</a></span>
+                                                                        <span class="like-count">55</span>
+                                                                </li>
+                                                                <li class="article-entry standard">
+                                                                        <h4><a href="#">puyopuyo让你做作业考试噗哟噗哟地</a></h4>
+                                                                        <span class="article-meta">8 Feb, 2018 in <a href="#" title="View all posts in Website Dev">puyopuyo</a></span>
+                                                                        <span class="like-count">22</span>
+                                                                </li>
+                                                                <li class="article-entry standard">
+                                                                        <h4><a href="#">核心代码进一步修正</a></h4>
+                                                                        <span class="article-meta">12 Feb, 2018 in <a href="#" title="View all posts in Advanced Techniques">puyopuyo &amp 系统</a></span>
+                                                                        <span class="like-count">21</span>
+                                                                </li>
+                                                        </ul>
+                                                </section>
+
+
+                                                <section class="widget">
+                                                        <h3 class="title">本站印象</h3>
+                                                        <div class="tagcloud">
+                                                                <a href="#" class="btn btn-mini">考试题目</a>
+                                                                <a href="#" class="btn btn-mini">作业题目</a>
+                                                                <a href="#" class="btn btn-mini">多条</a>
+                                                                <a href="#" class="btn btn-mini">并行处理</a>
+                                                                <a href="#" class="btn btn-mini">快速</a>
+                                                                <a href="#" class="btn btn-mini">便捷</a>
+                                                                <a href="#" class="btn btn-mini">噗哟噗哟</a>
+                                                                <a href="#" class="btn btn-mini">支持word文件</a>
+                                                                <a href="#" class="btn btn-mini">迅速上传</a>
+                                                                <a href="#" class="btn btn-mini">获得答案</a>
+                                                                <a href="#" class="btn btn-mini">准确率高</a>
+                                                        </div>
+                                                </section>
+
+                                        </aside>
+                                        <!-- end of sidebar -->
+                                </div>
+                        </div>
+                </div>
+                <!-- End of Page Container -->
+
+                <!-- Start of Footer -->
+                <footer id="footer-wrapper">
+                        <div id="footer" class="container">
+                                <div class="row">
+
+                                        <div class="span3">
+                                                <section class="widget">
+                                                        <h3 class="title">本站宗旨</h3>
+                                                        <div class="textwidget">
+                                                                <p>作业 考试？全都～噗哟噗哟的</p>
+                                                                <p>上传包含问题的word文档，经过分析后 立刻按照问题类型 列出所有问题以及答案 </p>
+                                                                <P>本站答案均来自网上，本站并无任何资源。望能给大家带来帮助</p>
+                                                        </div>
+                                                </section>
+                                        </div>
+
+
+                                        <div class="span3">
+                                                <section class="widget">
+                                                        <h3 class="title">友情链接</h3>
+                                                        <div class="flickr-photos" id="basicuse">
+                                                            <a href='http://www.kogado.com/' target="_blank"><img src="../static/images/img_kogadologo.png"></a>
+                                                            <a href='http://nippon1.jp/' target="_blank"><img src="../static/images/nippon1.gif"></a>
+                                                            <a href='http://www.kogado.com/sw/male/' target="_blank"><img src="../static/images/btn_footer_01.gif"></a>
+                                                        </div>
+                                                </section>
+                                        </div>
+
+                                </div>
+                        </div>
+                        <!-- end of #footer -->
+
+                        <!-- Footer Bottom -->
+                        <div id="footer-bottom-wrapper">
+                                <div id="footer-bottom" class="container">
+                                        <div class="row">
+                                                <div class="span6">
+                                                        <p class="copyright">
+                                                                Copyright © 2018. All Rights Reserved by Puyopuyo.
+                                                        </p>
+                                                </div>
+                                                <div class="span6">
+                                                        <!-- Social Navigation -->
+                                                        <ul class="social-nav clearfix">
+                                                                <li class="linkedin"><a target="_blank" href="#"></a></li>
+                                                                <li class="stumble"><a target="_blank" href="#"></a></li>
+                                                                <li class="google"><a target="_blank" href="#"></a></li>
+                                                                <li class="deviantart"><a target="_blank" href="#"></a></li>
+                                                                <li class="flickr"><a target="_blank" href="#"></a></li>
+                                                                <li class="skype"><a target="_blank" href="skype:#?call"></a></li>
+                                                                <li class="rss"><a target="_blank" href="#"></a></li>
+                                                                <li class="twitter"><a target="_blank" href="#"></a></li>
+                                                                <li class="facebook"><a target="_blank" href="#"></a></li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- End of Footer Bottom -->
+
+                </footer>
+                <!-- End of Footer -->
+
+                <a href="#top" id="scroll-top"></a>
+
+                <!-- script -->
+                <script type='text/javascript' src='../static/js/jquery-1.8.3.min.js'></script>
+                <script type='text/javascript' src='../static/js/jquery.easing.1.3.js'></script>
+                <script type='text/javascript' src='../static/js/jquery.liveSearch.js'></script>
+                <script type='text/javascript' src='../static/js/jquery.form.js'></script>
+                <script type='text/javascript' src='../static/js/jquery.validate.min.js'></script>
+                <script type="text/javascript" src="../static/js/jquery.yurayura.js"></script>
+                <script type="text/javascript" src="../static/js/jquery.searchAnimation.js"></script>
+				<script type='text/javascript'>
+					$(function(){
+                        $("#upload_word_area").yurayura( {
+                            'move' : 10,
+                            'delay' : 70,
+                            'duration' : 1200
+                        });
+                        $(".dropdown-toggle").click(function(){
+                            $(".dropdown-menu").css("display","block");
+                            $(".dropdown-menu a").click(function(){
+                                $(".dropdown-menu").css("display","none");
+                                $("#power_rate").html($(this).html())
+                            });
+                        });
+                        $(".search-btn").click(function(){
+                            var searchStartTimeLine = setInterval(draw, 33);
+                            $.ajax({
+								url: "searchText/?p=" + $("#power_rate").html().split("x")[1] + "&s=" + $("#s").val(), 
+								type: "GET",
+								async: true,
+								cache: false,
+								processData: false, //告诉jQuery不要去设置Content-Type请求头
+								contentType: false, //告诉jQuery不要去处理发送的数据
+								success: function(e) {
+                                    $("#web_content_area").html("");
+                                        bigAreaHead("快速搜索:","","web_content_area","exam_clazz_head_quick_search");
+                                        var examClazzContentsArea = bigAreaBody("web_content_area","exam_clazz_body_quick_search");
+                                        
+                                        if(e)
+                                        {
+                                            for(questionNum in e)
+                                            {
+                                                var question = e[questionNum];
+                                                var exam = smallArea(examClazzContentsArea,"exam_" + questionNum);
+                                                var examQuestion = smallAreaHead(exam,question.wenti,"exam_head_" + questionNum);
+                                                var examAnwser = smallAreaBody(exam,question.daan,"exam_body" + questionNum);
+                                            }
+                                        }
+                                        clearInterval(searchStartTimeLine);
+                                        $(".search-area-wrapper").css("background","url(../static/images/main-bg.jpg) no-repeat");
+                                    
+                                },
+                                error:function(request,errorInfo,errorTarget){
+                                    clearInterval(searchStartTimeLine);
+                                    alert("出现错误，可能原因：" + errorInfo);
+                                    $(".search-area-wrapper").css("background","url(../static/images/main-bg.jpg) no-repeat");
+                                }
+                            });
+                        
+                        });
+						$('#upFile').on('change', function() {
+                            var searchStartTimeLine = setInterval(draw, 33);
+							var formData = new FormData(),
+								me = $(this),
+								file = $("#upFile")[0].files[0];
+								
+							formData.append("file", file);
+                            if(file)
+							$.ajax({
+								url: "parseDocxFile/?p=" + $("#power_rate").html().split("x")[1], 
+								type: "POST",
+								contentType: 'multipart/form-data',
+								data: formData,
+								async: true,
+								cache: false,
+								processData: false, //告诉jQuery不要去设置Content-Type请求头
+								contentType: false, //告诉jQuery不要去处理发送的数据
+								success: function(e) {
+                                    $("#web_content_area").html("");
+                                    function matchQuestionType(questionClazz)
+                                    {
+                                        
+                                        var questionType = ['dan_xuan_ti','xuanze_ti','duo_xuan_ti','mingci_jieshi','wenda_ti','lunshu_ti','anli_fenxi_ti','tiankong_ti','jisuan_ti','bianxi_ti','xiezuo_ti'],
+                                            questionTypeChinese = ['单选题','选择题','多选题','名词解释','问答题','论述题','案例分析','填空题','计算题','辨析题','写作题'];
+                                        
+                                        for(questionTypeNum in questionClazz)
+                                        {
+                                            if(questionClazz[questionTypeNum])
+                                            {
+                                                currentItemIndex = questionType.indexOf(questionTypeNum);
+                                                result = {"questionClazz":questionTypeChinese[currentItemIndex],"questionContents":questionClazz[questionTypeNum]};
+                                                return  result;
+                                            }
+                                        }
+                                        
+                                    }
+                                    function split_anwser_contents(contents)
+                                    {
+                                      if(typeof contents == "string")
+                                        return contents
+                                      else
+                                      {
+                                        for(cNum in contents)
+                                        {
+                                            contents[cNum] = "<br><br>" + contents[cNum]
+                                        }
+                                        return contents;
+                                      }
+                                      
+                                    }
+                                    if(e)
+									for(questionClazzNum in e)
+                                    {
+                                        var questionClazz = matchQuestionType(e[questionClazzNum]);
+                                        bigAreaHead(questionClazz.questionClazz,"","web_content_area","exam_clazz_head_" + questionClazz.questionClazz);
+                                        var examClazzContentsArea = bigAreaBody("web_content_area","exam_clazz_body_" + questionClazz.questionClazz);
+                                        
+                                        for(questionContentsNum in questionClazz.questionContents)
+                                        {
+                                            var question = questionClazz.questionContents[questionContentsNum];
+                                            var exam = smallArea(examClazzContentsArea,"exam_" + questionContentsNum);
+                                            
+                                            if (question.wenti.length > 6)
+                                                var examQuestion = smallAreaHead(exam,question.wenti,"exam_head_" + questionContentsNum);
+                                                var examAnwser = smallAreaBody(exam,split_anwser_contents(question.daan),"exam_body" + questionContentsNum);
+                                        }
+                                        
+                                        
+                                    }
+
+								},
+                               error:function(request,errorInfo,errorTarget){
+                                    alert("出现错误，可能原因：" + errorInfo);
+                                    
+                               },
+                               complete:function(XHR, TS){
+                                    
+                                    clearInterval(searchStartTimeLine);
+                                    $(".search-area-wrapper").css("background","url(../static/images/main-bg.jpg) no-repeat");
+                               }
+							});
+					   });
+                       function bigAreaHead(title,contents,target,id)
+                       {
+                            target = $("body").find('.' + target).length > 0 ? $("body").find('.' + target) : $("body").find('#' + target);
+                            target.append('<article class=" page type-page hentry clearfix" id='+id+'></article>');
+                            parent = target.find("#" + id);
+                            parent.append('<h1 class="post-title"><a href="#">'+title+'</a></h1>')
+                                  .append('<hr>')
+                                  .append('<p>'+contents+'</p>');
+                            return parent;
+                       }
+                       function bigAreaBody(target,id)
+                       {
+                            target = $("body").find('.' + target).length > 0 ? $("body").find('.' + target) : $("body").find('#' + target);
+                            target.append('<div class="faqs clearfix" id='+id+'></div>');
+                            parent = target.find("#" + id);
+                            return parent;
+                       }
+                       function smallArea(bigAreaBody,id)
+                       {
+                            bigAreaBody.append('<article class="faq-item active" id='+id+'></div>');
+                            parent = bigAreaBody.find("#" + id);
+                            return parent;
+                       }
+                       function smallAreaHead(smallArea,title,id)
+                       {
+                            smallArea.append('<span class="faq-icon"></span>');
+                            smallArea.append('<h3 class="faq-question" id='+id+'><a href="#">'+title+'</a></h3>');
+                            parent = smallArea.find("#" + id);
+                            return parent;
+                       }
+                       function smallAreaBody(smallArea,body,id)
+                       {
+                            smallArea.append('<div class="faq-answer" id='+id+'></div>');
+                            parent = smallArea.find("#" + id);
+                            parent.append('<p>'+body+'</p>')
+                            return parent;
+                       }
+
+                       //bigAreaHead("问答题:","只是一些字，在有用的时候介绍一下吧","web_content_area","exam_clazz_head");
+                       //var examClazzContentsArea = bigAreaBody("web_content_area","exam_clazz_body");
+                       //var exam = smallArea(examClazzContentsArea,"exam");
+                       //var examQuestion = smallAreaHead(exam,"1.一只知更鸟是怎么死的?","exam_head");
+                       //var examAnwser = smallAreaBody(exam,"一长段内容，一长段内容一长段内容一长段内容一长段内容一长段内容一长段内容","exam_body");
+
+					})
+				</script>
+
+        </body>
+</html>
